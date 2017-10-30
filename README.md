@@ -12,3 +12,5 @@ html2canvas和jspdf用于将html读取成一张图片，然后将图片插入到
 npm install --save html2canvas jspdf
 ```
 
+--------------------------
+###### 因为一些原因，其他环境配置以及package.json等文件还没有上传，稍后更新
