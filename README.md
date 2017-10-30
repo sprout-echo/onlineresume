@@ -3,6 +3,7 @@
 首先使用vue-cli脚手架安装环境，并执行npm install命令安装依赖
 
 再安装其他所需要的模块:
+
 objectpath可以根据指定的格式读取到json格式数据的相应位置的数据，我们在demo中更新数据文档的时候使用到
 ```
 npm install --save objectpath
