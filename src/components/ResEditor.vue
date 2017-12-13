@@ -8,11 +8,11 @@
                 </li>
                 <router-link to="/preview" ><li id="preview">预览</li></router-link>
             </ul>
-            <div class="line-btn">
-                <button @click="addLineHeight()"> + </button><br/>
-                <button @click="reduceLineHeight()"> - </button>
-            </div>
         </nav>
+        <div class="line-btn">
+            <button @click="addLineHeight()"> + </button><br/>
+            <button @click="reduceLineHeight()"> - </button>
+        </div>
         <ul id="editText">
             <li v-for="item in resume.config" v-show="item.field === selected">
 
@@ -77,21 +77,24 @@ export default{
         float:left;
         font-family:'微软雅黑';
         border-right:1px solid #ccc;
-        padding:20px 0px;
-        top:-20px;
     }
     #nav{
-        width:22%;
+        position:absolute;
+        left:0px;
+        width:16%;
         height:100%;
-        float:left;
-        margin-left:-40px;
-        margin-top:-20px;
-        font-size:13px;
         text-align:center;
+        line-height:90px;
     }
-    ul{list-style:none;}
+    ul{
+        width:100%;
+        height:100%;
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
     #nav li{
-        padding:38px 15px;
+        height:12.5%;
         background:#ccc;
         color:#00a49d;
         border-bottom:1px solid #eee;
@@ -108,6 +111,7 @@ export default{
         overflow:auto;
         width:77%;
         height:100%;
+        margin-left:20%;
     }
     #editText label{
         display:inline-block;
